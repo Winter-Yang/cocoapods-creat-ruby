@@ -12,11 +12,7 @@ module Pod
     end
 
     def perform
-
-
-      prefix = configurator.prefix_name
-
-
+      prefix = @configurator.pod_name
       Pod::ProjectManipulator.new({
         :configurator => @configurator,
         :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
